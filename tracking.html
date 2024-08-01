@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Connectpay - View History</title>
+    <style>
+    .navbar { /* Navbar colour */
+      background-color: lightblue; 
+    }
+
+    .navbar-brand { /* Connect Pay Navbar colour */
+      color: black;
+      font-size: 24px;
+    }
+
+    .navbar-brand:hover { /* Colour when hovered */
+      color: white; 
+    }
+
+    .nav-link { /* Navbar link colour */
+      color: black;
+      font-size: 20px;
+    }
+
+    .nav-link:hover { /* Colour when hovered */
+      color: white; 
+    }
+
+    .btn-rounded { /* Rounded button */
+      border-radius: 25px; 
+    }
+
+    .btn-get-started { /* Button colour */
+      background-color: lightblue; 
+      color: black;
+      border: none; 
+      padding: 8px 25px; 
+      font-size: 17px; 
+    }
+
+    .btn-get-started:hover { /* Colour when hovered */
+      background-color: white; 
+    }
+
+    .wider-image { /* Larger image */
+      width: 800px;
+      height: 400px;
+    }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    color: #fff;
+}
+
+th {
+    background: linear-gradient(to right, #2c2379, #503bce);
+    color: #f9a825; /* Accent color for table header */
+}
+
+tr:nth-child(even) {
+    background: linear-gradient(to right, #503bce, #6254d3);
+}
+
+tr:nth-child(odd) {
+    background: linear-gradient(to right, #3b2ba3, #4c24c9);
+}
+
+tr:hover {
+    background: linear-gradient(to right, #6254d3, #7b64f1); /* Lighter gradient for hover effect */
+}
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home.html">
+        <img src="connectpay.png" alt="Connect Pay Logo" style="width:80px;">
+        Connect Pay
+      </a>
+  
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/topup.html">Top Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/tracking.html">Tracking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <div class="container">
+        <h1>Transaction History</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Merchant Name</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Progress</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tiktok Shop</td>
+                    <td>$24.70</td>
+                    <td>2024-07-01</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>Instagram</td>
+                    <td>$15.99</td>
+                    <td>2024-07-03</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>Facebook Marketplace</td>
+                    <td>$9.99</td>
+                    <td>2024-07-05</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>Spotify</td>
+                    <td>$32.00</td>
+                    <td>2024-07-10</td>
+                    <td>Failed</td>
+                </tr>
+                <tr>
+                    <td>Hulu</td>
+                    <td>$20.00</td>
+                    <td>2024-07-15</td>
+                    <td>Completed</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Contact - Connect Pay</title>
+  <style>
+    .navbar {
+      background-color: lightblue;
+    }
+    .navbar-brand {
+      color: black;
+      font-size: 24px;
+    }
+    .navbar-brand:hover {
+      color: white;
+    }
+    .nav-link {
+      color: black;
+      font-size: 20px;
+    }
+    .nav-link:hover {
+      color: white;
+    }
+    .contact-form {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f7f7f7;
+      border-radius: 10px;
+    }
+    .btn-custom {
+      background-color: lightblue;
+      color: black;
+      border: none;
+      padding: 8px 25px;
+      font-size: 17px;
+      border-radius: 25px;
+    }
+    .btn-custom:hover {
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+ 
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/home.html">
+      <img src="connectpay.png" alt="Connect Pay Logo" style="width:80px;">
+      Connect Pay
+    </a>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/topup.html">Top Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tracking.html">Tracking</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+<!-- Contact Form -->
+<div class="container">
+  <div class="contact-form">
+    <h2 class="text-center">Contact Us</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-custom">Send Message</button>
+      </div>
+    </form>
+  </div>
+</div>
+ 
+<!-- Bootstrap JS and dependencies (optional) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

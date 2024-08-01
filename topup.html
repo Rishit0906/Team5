@@ -1,0 +1,139 @@
+<!-- Top Up -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Top Up - Connect Pay</title>
+ 
+  <!-- Styles -->
+  <style>
+    .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border: none;
+        }
+        .btn-custom {
+            background-color: lightblue;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: lightblue;
+        }
+        .btn-rounded {
+            border-radius: 50px;
+        }
+        .btn-get-started {
+            font-weight: bold;
+        }
+        .navbar { /* Navbar colour */
+      background-color: lightblue; 
+    }
+
+    .navbar-brand { /* Connect Pay Navbar colour */
+      color: black;
+      font-size: 24px;
+    }
+
+    .navbar-brand:hover { /* Colour when hovered */
+      color: white; 
+    }
+
+    .nav-link { /* Navbar link colour */
+      color: black;
+      font-size: 20px;
+    }
+
+    .nav-link:hover { /* Colour when hovered */
+      color: white; 
+    }
+
+    .btn-rounded { /* Rounded button */
+      border-radius: 25px; 
+    }
+
+    .btn-get-started { /* Button colour */
+      background-color: lightblue; 
+      color: black;
+      border: none; 
+      padding: 8px 25px; 
+      font-size: 17px; 
+    }
+
+    .btn-get-started:hover { /* Colour when hovered */
+      background-color: white; 
+    }
+
+    .wider-image { /* Larger image */
+      width: 800px;
+      height: 400px;
+    }
+  </style>
+</head>
+ 
+<body>
+  <!-- Navbar<!-- Navbar -->
+<nav class="navbar navbar-expand-sm custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="connectpay.png" alt="Connect Pay Logo" style="width:80px;">
+        Connect Pay
+      </a>
+    
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/topup.html">Top Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/tracking.html">Tracking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+ 
+  <!-- Top Up Content -->
+  <div class="container text-center my-4">
+    <h2>Top Up Your Account</h2>
+    <p>Enter the amount you want to top up:</p>
+    <form>
+      <input type="number" id="amount" name="amount" required>
+      <br><br>
+      <h4>Payment Options:</h4>
+      <div class="payment-options">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="paymentOption" id="creditCard" checked>
+          <label class="form-check-label" for="creditCard">Credit Card</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="paymentOption" id="paypal">
+          <label class="form-check-label" for="paypal">PayPal</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="paymentOption" id="bankTransfer">
+          <label class="form-check-label" for="bankTransfer">Bank Transfer</label>
+        </div>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-custom btn-rounded btn-get-started">Submit</button>
+    </form>
+  </div>
+ 
+  <!-- Bootstrap JS and dependencies (optional) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
